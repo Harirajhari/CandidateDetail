@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #9D30B1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.back-button:hover {
+    background-color: #7B2391;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.left-info {
+    width: 60%;
+}
+
+.right-info {
+    text-align: center;
+    width: 35%;
+}
+
+.right-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #9D30B1;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.details-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-column,
+.right-column {
+    width: 45%;
+}
+
+
+.detail-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.detail-item strong {
+    color: #333;
+}
+
+.work-experience-section {
+    margin-top: 20px;
+}
+
+.work-experience-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #9D30B1;
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .right-info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .details-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .back-button {
+        margin-bottom: 20px;
+    }
+}
